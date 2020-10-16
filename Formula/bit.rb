@@ -22,6 +22,5 @@ class Bit < Formula
 
   test do
     system "#{bin}/program --version"
-    ...
   end
 end
