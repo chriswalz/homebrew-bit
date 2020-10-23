@@ -2,21 +2,21 @@
 class Bit < Formula
   desc "A modern git CLI"
   homepage "https://github.com/chriswalz/bit"
-  version "0.8.0"
+  version "0.8.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/chriswalz/bit/releases/download/v0.8.0/bit_0.8.0_darwin_amd64.tar.gz", :using => CurlDownloadStrategy.
-    sha256 "02d6f2d3d51aea26b17d7c8337bba54d55d86feb882ae9a933192942cd0ad4a2"
+    url "https://github.com/chriswalz/bit/releases/download/v0.8.1/bit_0.8.1_darwin_amd64.tar.gz", :using => CurlDownloadStrategy.
+    sha256 "837a2484bc51d9154b0390cd577074a0d370cc82dcfd861d1e541ef879d1b54d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/chriswalz/bit/releases/download/v0.8.0/bit_0.8.0_linux_amd64.tar.gz", :using => CurlDownloadStrategy.
-      sha256 "0921027dc1942ae798e87668c339c354d59599530ef6b9c75890b501fe8b0cdd"
+      url "https://github.com/chriswalz/bit/releases/download/v0.8.1/bit_0.8.1_linux_amd64.tar.gz", :using => CurlDownloadStrategy.
+      sha256 "8ad3bfe3da155c73b471a8261c07c1ceb3e6f6f254686ac29246a670ee5fd126"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/chriswalz/bit/releases/download/v0.8.0/bit_0.8.0_linux_arm64.tar.gz", :using => CurlDownloadStrategy.
-        sha256 "d3b2fd77961387e5351cca73ddfff676d0b46de7dae7b5341034354654046920"
+        url "https://github.com/chriswalz/bit/releases/download/v0.8.1/bit_0.8.1_linux_arm64.tar.gz", :using => CurlDownloadStrategy.
+        sha256 "4387a14e14283be5d3d9fb6228cc3324a9a89a09537edb5d77396fea9da59bf7"
       else
       end
     end
